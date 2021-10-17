@@ -28,6 +28,7 @@ function MyStack(){
 function MYTab (){
   return(
     <Tab.Navigator
+    
     screenOptions={{
       tabBarStyle : {fontSize : 8},
       tabBarItemStyle  :{width:100 },
