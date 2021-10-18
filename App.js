@@ -17,7 +17,7 @@ function MyStack(){
       <stack.Screen
       name ='Tab'
       component ={MYTab}
-      options ={{headerTitle :'Search for a service',headerTitleAlign : 'center'}}
+      options ={{headerShown:false}}
       
       />
     </stack.Navigator>
