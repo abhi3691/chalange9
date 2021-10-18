@@ -1,5 +1,5 @@
 import React from 'react'
-import { View,Text } from 'react-native';
+import { View,Text,StyleSheet } from 'react-native';
 import {NavigationContainer} from '@react-navigation/native'
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs'
 import { createStackNavigator } from '@react-navigation/stack';
@@ -8,16 +8,20 @@ import Chapter from './src/Tab/Chapter';
 import Resources from './src/Tab/Resources';
 import QNBank from './src/Tab/QNBank';
 
+
 const Tab = createMaterialTopTabNavigator()
 const stack = createStackNavigator()
 
 function MyStack(){
   return(
-    <stack.Navigator>
+   
+    <stack.Navigator >
+      
       <stack.Screen
       name ='Tab'
       component ={MYTab}
       options ={{headerShown:false}}
+    
       
       />
     </stack.Navigator>
@@ -27,27 +31,40 @@ function MyStack(){
 
 function MYTab (){
   return(
+    
     <Tab.Navigator
     screenOptions={{
-      tabBarStyle : {fontSize : 8},
+      tabBarStyle : {fontSize : 8,},
       tabBarItemStyle  :{width:100 },
-      tabBarStyle      :{backgroundColor:'#fff'}
+      tabBarLabelStyle:{fontSize :12,},
+      
+      
+     
+      
+      
       
     }}
     >
+      
   
       <Tab.Screen  name ='Videos' component ={Video} 
                   options ={{
                     
                     tabBarActiveTintColor:'red',
                     tabBarInactiveTintColor:'gray',
+                    tabBarIndicatorStyle:{
+                     backgroundColor:'red'   
+                    },
+                  
                   }}
       />
       <Tab.Screen  name ='Chapter' component ={Chapter}
                         options ={{
                           tabBarActiveTintColor:'red',
                           tabBarInactiveTintColor:'gray',
-                         
+                          tabBarIndicatorStyle:{
+                            backgroundColor:'red'   
+                           },
                         }}
 
       
@@ -60,6 +77,9 @@ function MYTab (){
         
         tabBarActiveTintColor:'red',
         tabBarInactiveTintColor:'gray',
+        tabBarIndicatorStyle:{
+          backgroundColor:'red'   
+         },
        
       }}
       
@@ -68,6 +88,9 @@ function MYTab (){
                         options ={{
                           tabBarActiveTintColor:'red',
                           tabBarInactiveTintColor:'gray',
+                          tabBarIndicatorStyle:{
+                            backgroundColor:'red'   
+                           },
                           
                         }}
       
@@ -85,5 +108,10 @@ export default function APP (){
    
   )
 }
+
+
+
+
+
 
 
