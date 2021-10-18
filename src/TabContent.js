@@ -7,7 +7,7 @@ export default class TabContent extends Component  {
     <View style={styles.container}>
         <View  style={styles.searchContainer} >   
         <Icon
-        name ='search' size={24}
+        name ='search' size={35}
         />
       <TextInput
       placeholder ='Search for Service'
@@ -34,20 +34,23 @@ const styles = StyleSheet.create({
     borderWidth:1,
     borderColor:'#eee',
     alignItems:'center',
-    justifyContent:'center',
+    justifyContent:'flex-start',
     borderRadius:8,
     backgroundColor:'#fff',
     elevation:4,
+    paddingLeft:25,
+    
     
     
   },
   TextInput:{
       
     
-      width:'60%',
+      width:'100%',
       height:20,
       paddingLeft:10,
       fontWeight:'bold',
+      
       
       
 
