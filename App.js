@@ -38,7 +38,9 @@ function MYTab (){
       tabBarItemStyle  :{width:100 },
       tabBarLabelStyle:{fontSize :12,},
       
-      
+      tabBarIndicatorStyle:{
+        backgroundColor:'red'   
+       },
      
       
       
@@ -52,9 +54,7 @@ function MYTab (){
                     
                     tabBarActiveTintColor:'red',
                     tabBarInactiveTintColor:'gray',
-                    tabBarIndicatorStyle:{
-                     backgroundColor:'red'   
-                    },
+
                   
                   }}
       />
@@ -62,9 +62,7 @@ function MYTab (){
                         options ={{
                           tabBarActiveTintColor:'red',
                           tabBarInactiveTintColor:'gray',
-                          tabBarIndicatorStyle:{
-                            backgroundColor:'red'   
-                           },
+
                         }}
 
       
@@ -77,9 +75,7 @@ function MYTab (){
         
         tabBarActiveTintColor:'red',
         tabBarInactiveTintColor:'gray',
-        tabBarIndicatorStyle:{
-          backgroundColor:'red'   
-         },
+
        
       }}
       
@@ -88,9 +84,7 @@ function MYTab (){
                         options ={{
                           tabBarActiveTintColor:'red',
                           tabBarInactiveTintColor:'gray',
-                          tabBarIndicatorStyle:{
-                            backgroundColor:'red'   
-                           },
+
                           
                         }}
       
