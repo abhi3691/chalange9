@@ -9,7 +9,7 @@ import Chapter from './src/Tab/Chapter';
 import Resources from './src/Tab/Resources';
 import QNBank from './src/Tab/QNBank';
 
-
+import TabContent from './src/TabContent';
 const Tab = createMaterialTopTabNavigator()
 const stack = createStackNavigator()
 
@@ -41,9 +41,7 @@ function MYTab (){
       tabBarIndicatorStyle:{
         backgroundColor:'red'   
        },
-     
-      
-      
+
       
     }}
     >
@@ -97,6 +95,7 @@ function MYTab (){
 export default function APP (){
   return(
     <NavigationContainer>
+      <TabContent/>
        <MyStack/>
     </NavigationContainer>
    
