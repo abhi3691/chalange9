@@ -2,6 +2,7 @@ import React from 'react'
 import { View,Text,StyleSheet } from 'react-native';
 import {NavigationContainer} from '@react-navigation/native'
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs'
+
 import { createStackNavigator } from '@react-navigation/stack';
 import Video from './src/Tab/Video';
 import Chapter from './src/Tab/Chapter';
@@ -37,7 +38,6 @@ function MYTab (){
       tabBarStyle : {fontSize : 8,},
       tabBarItemStyle  :{width:100 },
       tabBarLabelStyle:{fontSize :12,},
-      
       tabBarIndicatorStyle:{
         backgroundColor:'red'   
        },
